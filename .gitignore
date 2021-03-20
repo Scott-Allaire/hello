@@ -35,3 +35,10 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Archives ###
+*.zip
+*.gz
+*.tar
+*.tar.gz
+*.tgz
