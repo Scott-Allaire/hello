@@ -5,7 +5,13 @@ plugins {
 }
 
 group = 'com.github.scott-allaire'
-version = '0.0.1-SNAPSHOT'
+
+if (!project.hasProperty("buildNumber")) {
+	version = "0.0.1-SNAPSHOT"
+} else {
+	version = "0.0.${buildNumber}"
+}
+
 sourceCompatibility = '11'
 
 repositories {
